@@ -31,7 +31,7 @@
     
 //    [UIView animateWithDuration:1 animations:^{
 //        CGPoint offset = self.scrollView.contentOffset;
-//        offset.y = 0;
+//        offset.y = 0 ;
 //        self.scrollView.contentOffset = offset;
 //    }];
     
