@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageController;
 
+
+@property (weak, nonatomic) NSTimer *timer;
 @end
 
 @implementation ViewController
@@ -34,13 +36,34 @@
     
     //self.pageController.numberOfPages = count;
     
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
     
+
     
+}
+
+-(void)nextPage{
+    NSInteger page = self.pageController.currentPage + 1;
+    
+    if(page == 5){
+        page=0;
+    }
+    
+    [self.scrollView setContentOffset:CGPointMake(page*self.scrollView.frame.size.width, 0) animated:YES];
+}
+
+
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.timer invalidate];
+    self.timer = nil;
 }
 
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     int page = scrollView.contentOffset.x/scrollView.frame.size.width + 0.5;
+    
+
     self.pageController.currentPage = page;
 }
 

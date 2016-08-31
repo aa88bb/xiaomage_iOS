@@ -13,6 +13,7 @@
 		75BEDD051D7376C6002A348D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BEDD031D7376C6002A348D /* Main.storyboard */; };
 		75BEDD071D7376C6002A348D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BEDD061D7376C6002A348D /* Assets.xcassets */; };
 		75BEDD0A1D7376C6002A348D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BEDD081D7376C6002A348D /* LaunchScreen.storyboard */; };
+		75BEDD131D73926C002A348D /* xmgPageview.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEDD121D73926C002A348D /* xmgPageview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		75BEDD061D7376C6002A348D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75BEDD091D7376C6002A348D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75BEDD0B1D7376C6002A348D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75BEDD111D73926C002A348D /* xmgPageview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmgPageview.h; sourceTree = "<group>"; };
+		75BEDD121D73926C002A348D /* xmgPageview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmgPageview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				75BEDD081D7376C6002A348D /* LaunchScreen.storyboard */,
 				75BEDD0B1D7376C6002A348D /* Info.plist */,
 				75BEDCFA1D7376C6002A348D /* Supporting Files */,
+				75BEDD111D73926C002A348D /* xmgPageview.h */,
+				75BEDD121D73926C002A348D /* xmgPageview.m */,
 			);
 			path = 828page;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BEDD131D73926C002A348D /* xmgPageview.m in Sources */,
 				75BEDD021D7376C6002A348D /* ViewController.m in Sources */,
 				75BEDCFF1D7376C6002A348D /* AppDelegate.m in Sources */,
 				75BEDCFC1D7376C6002A348D /* main.m in Sources */,
