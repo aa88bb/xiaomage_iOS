@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>header</key>
+		<string>dexi</string>
+		<key>footer</key>
+		<string>dexikkkkk</string>
+		<key>cars</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>benchi</string>
+				<key>icon</key>
+				<string>m_2_100</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>baoma</string>
+				<key>icon</key>
+				<string>m_3_100</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<string>rixi</string>
+		<key>footer</key>
+		<string>rixikkkkk</string>
+		<key>cars</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>fengtian</string>
+				<key>icon</key>
+				<string>m_7_100</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>mazida</string>
+				<key>icon</key>
+				<string>m_18_100</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>bentian</string>
+				<key>icon</key>
+				<string>m_26_100</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

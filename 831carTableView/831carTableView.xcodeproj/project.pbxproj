@@ -13,6 +13,9 @@
 		7584D2BC1D775BB700FD872B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7584D2BA1D775BB700FD872B /* Main.storyboard */; };
 		7584D2BE1D775BB700FD872B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7584D2BD1D775BB700FD872B /* Assets.xcassets */; };
 		7584D2C11D775BB700FD872B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7584D2BF1D775BB700FD872B /* LaunchScreen.storyboard */; };
+		7584D2CA1D77746700FD872B /* XMGCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7584D2C91D77746700FD872B /* XMGCarGroup.m */; };
+		7584D2CD1D777A2700FD872B /* XMGCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7584D2CC1D777A2700FD872B /* XMGCar.m */; };
+		7584D2CF1D7784CD00FD872B /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7584D2CE1D7784CD00FD872B /* cars.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		7584D2BD1D775BB700FD872B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7584D2C01D775BB700FD872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7584D2C21D775BB700FD872B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7584D2C81D77746700FD872B /* XMGCarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCarGroup.h; sourceTree = "<group>"; };
+		7584D2C91D77746700FD872B /* XMGCarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCarGroup.m; sourceTree = "<group>"; };
+		7584D2CB1D777A2700FD872B /* XMGCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCar.h; sourceTree = "<group>"; };
+		7584D2CC1D777A2700FD872B /* XMGCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCar.m; sourceTree = "<group>"; };
+		7584D2CE1D7784CD00FD872B /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,11 @@
 				7584D2BF1D775BB700FD872B /* LaunchScreen.storyboard */,
 				7584D2C21D775BB700FD872B /* Info.plist */,
 				7584D2B11D775BB700FD872B /* Supporting Files */,
+				7584D2C81D77746700FD872B /* XMGCarGroup.h */,
+				7584D2C91D77746700FD872B /* XMGCarGroup.m */,
+				7584D2CB1D777A2700FD872B /* XMGCar.h */,
+				7584D2CC1D777A2700FD872B /* XMGCar.m */,
+				7584D2CE1D7784CD00FD872B /* cars.plist */,
 			);
 			path = 831carTableView;
 			sourceTree = "<group>";
@@ -137,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7584D2C11D775BB700FD872B /* LaunchScreen.storyboard in Resources */,
+				7584D2CF1D7784CD00FD872B /* cars.plist in Resources */,
 				7584D2BE1D775BB700FD872B /* Assets.xcassets in Resources */,
 				7584D2BC1D775BB700FD872B /* Main.storyboard in Resources */,
 			);
@@ -149,9 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7584D2CD1D777A2700FD872B /* XMGCar.m in Sources */,
 				7584D2B91D775BB700FD872B /* ViewController.m in Sources */,
 				7584D2B61D775BB700FD872B /* AppDelegate.m in Sources */,
 				7584D2B31D775BB700FD872B /* main.m in Sources */,
+				7584D2CA1D77746700FD872B /* XMGCarGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
