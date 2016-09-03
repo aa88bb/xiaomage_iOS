@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "XMGWine.h"
 
-@interface ViewController () <UITableViewDataSource>
+@interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic,strong) NSArray *wineArray;
 @end
@@ -33,6 +34,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.tableView.rowHeight = 50;
+//    self.tableView.sectionHeaderHeight = 30;
+//    self.tableView.sectionFooterHeight = 30;
+//    self.tableView.separatorColor = [UIColor redColor];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+//    self.tableView.tableFooterView = [[UISwitch alloc] init];
+    
+    
+    self.tableView.delegate = self;
     
     
 }
@@ -56,10 +66,18 @@
     cell.imageView.image = [UIImage imageNamed:wine.image];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@",wine.money];
     cell.detailTextLabel.textColor = [UIColor orangeColor];
+    cell.accessoryView = [[UISwitch alloc] init];
     
     return cell;
 }
 
 
+
+/**
+ *  delegate
+ */
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"I select %ld",indexPath.row);
+}
 
 @end
